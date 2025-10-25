@@ -1,0 +1,32 @@
+#include <DigiKeyboard.h>
+
+void setup() {
+  DigiKeyboard.delay(2000);
+}
+
+void loop() {
+  // Mezcla de letras, números y símbolos
+  char caracteres[] = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+-=[]{}|;:,.<>?/";
+  
+  // Escribir entre 1 y 5 caracteres seguidos
+  int cantidad = random(1, 6);
+  for(int i = 0; i < cantidad; i++) {
+    int randomChar = random(0, sizeof(caracteres) - 1);
+    DigiKeyboard.print(String(caracteres[randomChar]));
+  }
+  
+  // Acciones aleatorias más frecuentes
+  int accion = random(0, 15);
+  switch(accion) {
+    case 0: DigiKeyboard.sendKeyStroke(KEY_ENTER); break;
+    case 1: DigiKeyboard.sendKeyStroke(44); break; // SPACE
+    case 2: DigiKeyboard.sendKeyStroke(43); break; // TAB
+    case 3: DigiKeyboard.sendKeyStroke(42); break; // BACKSPACE
+    case 4: DigiKeyboard.sendKeyStroke(82); break; // ARROW_DOWN
+    case 5: DigiKeyboard.sendKeyStroke(84); break; // ARROW_LEFT
+    case 6: DigiKeyboard.sendKeyStroke(83); break; // ARROW_RIGHT
+  }
+  
+  // Tiempo aleatorio entre acciones
+  delay(random(30, 150));
+}

@@ -1,0 +1,57 @@
+#include <DigiKeyboard.h>
+
+void setup() {
+  DigiKeyboard.delay(4000);
+  
+  // Abrir Bloc de notas en pantalla completa
+  DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
+  delay(800);
+  DigiKeyboard.print("notepad");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  delay(2000);
+  DigiKeyboard.sendKeyStroke(KEY_F11); // Pantalla completa
+  
+  // Escribir "ACCEDIENDO AL SISTEMA..."
+  String inicio = "ACCEDIENDO AL SISTEMA...";
+  for(int i = 0; i < inicio.length(); i++) {
+    DigiKeyboard.print(String(inicio[i]));
+    delay(100);
+  }
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  
+  // 25 líneas de código binario falso
+  for(int linea = 0; linea < 25; linea++) {
+    DigiKeyboard.print(">> ");
+    
+    for(int bit = 0; bit < 35; bit++) {
+      if(random(0, 2) == 0) {
+        DigiKeyboard.print("0");
+      } else {
+        DigiKeyboard.print("1");
+      }
+      delay(30); // Muy rápido para efecto hacker
+    }
+    
+    DigiKeyboard.print(" // ");
+    
+    // Texto técnico falso
+    String textos[] = {"root_access", "kernel_bypass", "firewall_off", "encryption_cracked", "admin_granted"};
+    DigiKeyboard.print(textos[random(0, 5)]);
+    
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    delay(200);
+  }
+  
+  // Mensaje final lento
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  String broma = "ES UNA BROMA INOFENSIVA! :)";
+  for(int i = 0; i < broma.length(); i++) {
+    DigiKeyboard.print(String(broma[i]));
+    delay(2000); // 2 segundos exactos por letra
+  }
+}
+
+void loop() {
+  delay(60000);
+}

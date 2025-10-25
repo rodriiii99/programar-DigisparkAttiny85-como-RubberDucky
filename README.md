@@ -30,8 +30,11 @@ Y luego el puerto por el que saldrá la información para que se cargue en el At
 
 # Funcionamiento
 Copiar los scripts de algunos de los archivos que os dejo adjuntados (más abajo estan explicados todos) y ponerlo en el Arduino IDE.
+<img width="951" height="362" alt="image" src="https://github.com/user-attachments/assets/9fa48638-4f87-4704-b93e-5b7a02b86814" />
+<img width="976" height="501" alt="image" src="https://github.com/user-attachments/assets/3deaffb5-dc14-4b9f-94e0-6893c963d30a" />
+
 # Scripts
-1. Cierre de todas las ventanas abiertas en el PC: Este script empezará a cerrar todas las pestañas del pc sin parar hasta que sea desconectado , basicamente en 10 segundos te puede llegar a cerrar todas las pestañas abiertas en tu pc
+1. Cierre de todas las ventanas abiertas en el PC: Este script empezará a cerrar todas las pestañas del pc sin parar hasta que sea desconectado, basicamente en 10 segundos te puede llegar a cerrar todas las pestañas abiertas en tu PC
 2. 
 MÁS PROXIMAMENTE!!!!
-3. 
+   

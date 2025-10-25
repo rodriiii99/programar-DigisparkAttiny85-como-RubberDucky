@@ -13,7 +13,10 @@ En esta guía en español te enseñaré como programar tu Rubber Ducky por menos
 
 
 # Instalacion de Drivers para que podamos programar nuestro rubber ducky
-Tendremos que ir a los archivos adjuntados a este repositorio y buscar el archivo llamado "DRIVERS", seguidamente lo descargaremos en nuestro PC, luego entraremos en la carpeta que acabamos de descargar y buscaremos dentro de ella el archivo "DPinst64" y lo abriremos.Al abrirlo nos aparecerá una nueva pestaña (que servirá para instalar los drivers) le daremos a instalar y esperaremos a q se descargue, cuando acabe pondrá un botón de finalizar, le damos y se cerrará la pestaña.<img width="959" height="479" alt="image" src="https://github.com/user-attachments/assets/dfec3a02-a4a2-4d5f-9700-9048bac60e0f" />
+Tendremos que ir a los archivos adjuntados a este repositorio(para ir directamente pincha aquí -->https://github.com/rodriiii99/programar-DigisparkAttiny85-como-RubberDucky/blob/main/DPinst64.exe) o buscar el archivo llamado "DPinst64" que esta adjuntado en los archivos de este repositorio, y seguidamente lo descargaremos en nuestro PC pinchandole al boton/dibujo de descarga <img width="948" height="403" alt="image" src="https://github.com/user-attachments/assets/9a26cc75-7215-45df-a38d-99383e2ad48a" />
+
+
+Una vez instalado lo abrimos y nos aparecerá una nueva pestaña (que servirá para instalar los drivers) le daremos a instalar y esperaremos a q se descargue, cuando acabe pondrá un botón de finalizar, le damos y se cerrará la pestaña.<img width="959" height="479" alt="image" src="https://github.com/user-attachments/assets/dfec3a02-a4a2-4d5f-9700-9048bac60e0f" />
 
 
 Con esto ya tendriamos finalizado el apartado de drivers ahora solo hay que hacer que reconozca el Attiny85 el Arduino IDE.Que es la app que utilizaremos para programar nuestro Attiny85
@@ -28,4 +31,4 @@ Y luego el puerto por el que saldrá la información para que se cargue en el At
 # Funcionamiento
 Copiar los scripts de algunos de los archivos que os dejo adjuntados (más abajo estan explicados todos) y ponerlo en el Arduino IDE.
 # Scripts
-
+1. 

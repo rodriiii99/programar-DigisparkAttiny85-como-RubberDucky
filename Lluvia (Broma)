@@ -1,0 +1,58 @@
+#include <DigiKeyboard.h>
+
+void setup() {
+  DigiKeyboard.delay(5000);
+  
+  // Abrir terminal (cmd en Windows)
+  DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
+  delay(1000);
+  DigiKeyboard.print("cmd");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  delay(2000);
+  
+  // Cambiar a modo pantalla completa
+  DigiKeyboard.sendKeyStroke(KEY_F11);
+  delay(1000);
+  
+  // Cambiar color a verde estilo Matrix
+  DigiKeyboard.print("color 0a");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  delay(500);
+  
+  // Limpiar pantalla
+  DigiKeyboard.print("cls");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  delay(500);
+  
+  // Crear efecto de lluvia digital con caracteres aleatorios
+  DigiKeyboard.print("echo Iniciando lluvia digital...");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  delay(1000);
+  
+  // Simular efecto Matrix con caracteres
+  for(int i = 0; i < 50; i++) {
+    String line = "";
+    for(int j = 0; j < 40; j++) {
+      if(random(0, 5) == 0) {
+        line += String(char(random(48, 58))); // Números
+      } else {
+        line += String(char(random(65, 91))); // Letras mayúsculas
+      }
+    }
+    DigiKeyboard.print("echo " + line);
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    delay(100);
+  }
+  
+  // Mensaje final
+  DigiKeyboard.print("echo ");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.print("echo EFECTO MATRIX COMPLETADO");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.print("echo Presiona cualquier tecla para salir...");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+}
+
+void loop() {
+  delay(30000);
+}

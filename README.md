@@ -35,6 +35,7 @@ Copiar los scripts de algunos de los archivos que os dejo adjuntados (más abajo
 
 # Scripts
 1. [Cierre de todas las ventanas abiertas en el PC](https://github.com/rodriiii99/programar-DigisparkAttiny85-como-RubberDucky/blob/main/Cierre%20de%20todas%20las%20ventanas%20abiertas%20en%20el%20PC): Este script empezará a cerrar todas las pestañas del pc sin parar hasta que sea desconectado, basicamente en 10 segundos te puede llegar a cerrar todas las pestañas abiertas en tu PC
-2. 
+2. [Broma de hackeo](https://github.com/rodriiii99/programar-DigisparkAttiny85-como-RubberDucky/blob/main/Broma%20de%20hackeo): Este script pondra un mensaje de accediendo al sistema y seguidamente empezara a llenar 20 lineas de código binario, cuando acabe pondra la frase "es una broma" al final de todo el texto.
+3. 
 MÁS PROXIMAMENTE!!!!
    

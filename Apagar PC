@@ -1,0 +1,20 @@
+#include <DigiKeyboard.h>
+
+void setup() {
+  DigiKeyboard.delay(5000);
+  
+  // Primero ir al escritorio (Win + D)
+  DigiKeyboard.sendKeyStroke(KEY_D, MOD_GUI_LEFT);
+  delay(2000);
+  
+  // Ahora Alt + F4 en el escritorio abre diálogo de apagado
+  DigiKeyboard.sendKeyStroke(KEY_F4, MOD_ALT_LEFT);
+  delay(2000);
+  
+  // Presionar ENTER para apagar
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+}
+
+void loop() {
+  delay(10000);
+}

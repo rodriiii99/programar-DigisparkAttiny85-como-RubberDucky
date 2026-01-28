@@ -1,0 +1,25 @@
+#include "DigiKeyboard.h"
+
+void setup() {
+  pinMode(1, OUTPUT); // LED para feedback
+  // Espera LARGA para que tengas tiempo de colocar el cursor en Discord
+  DigiKeyboard.delay(6000);
+}
+
+void loop() {
+  digitalWrite(1, HIGH); // LED ON: acción iniciada
+
+  // Simula CTRL+V para pegar lo que haya en el portapapeles
+  DigiKeyboard.sendKeyStroke(KEY_V, MOD_CONTROL_LEFT);
+  DigiKeyboard.delay(50); // Breve pausa para que el sistema pegue
+
+  digitalWrite(1, LOW); // LED OFF: acción completada
+
+  // Pausas y ENTERs como lo necesitas
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(1000);
+  // El ciclo se repetirá y volverá a pegar lo mismo
+}

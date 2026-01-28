@@ -38,6 +38,7 @@ Copiar los scripts de algunos de los archivos que os dejo adjuntados (más abajo
 2. [Broma de hackeo](https://github.com/rodriiii99/programar-DigisparkAttiny85-como-RubberDucky/blob/main/Broma%20de%20hackeo): Este script pondra un mensaje de accediendo al sistema y seguidamente empezara a llenar 20 lineas de código binario, cuando acabe pondra la frase "es una broma" al final de todo el texto.
 3. [Teclado loco](https://github.com/rodriiii99/programar-DigisparkAttiny85-como-RubberDucky/blob/main/Teclado%20Loco): Este script empezara a poner las letras de la a a la z y seguidamnete tocara enter,espacio y las 4 flechas de abajo, arriba, derecha e izquierda.Y lo hará en bucle hasta que se desconecte el dispositivo.
 4. [Spam del texto que tú quieras](): Este scrip pone el texto que tengas copiado en el portapapeles y lo pone de manera infinita hasta que tú lo desconectes el Digispark. Funciona poniendo el atajo Cntrl + V y Enter dos veces y luego espera 1 segundo hasta ponerlo otra vez.
+5. [Apagar PC Automaticamente](https://github.com/rodriiii99/programar-DigisparkAttiny85-como-RubberDucky/blob/main/Apagar%20PC): Nada más que lo conectes el Digispark abrirá el menú del PC y llegara hasta el botón de apagar y le pulsará seguidamente se apagará el PC y ya lo podrás desconectar.
 
 MÁS PROXIMAMENTE!!!!HAGO TAMBIEN LOS SCRIPTS QUE ME PIDAIS DEJADMELO EN EL APARTADO DE [ISSUES](https://github.com/rodriiii99/programar-DigisparkAttiny85-como-RubberDucky/issues) OS ESTARÉ LEYENDO!!!
    
